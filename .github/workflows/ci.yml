@@ -1,0 +1,17 @@
+name: CI Básico
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Validar código
+        run: echo "Todo bien"
